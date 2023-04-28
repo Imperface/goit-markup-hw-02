@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Raleway";
   src: url("../fonts/raleway-extrabold.ttf") format("truetype");
   font-weight: 800;
@@ -17,9 +17,8 @@
   font-family: "Roboto";
   src: url("../fonts/roboto-bold.woff2") format("woff2");
   font-weight: 700;
-}
+} */
 :root {
-  --color-text-link: #2e2f42;
   --color-text-main: #2e2f42;
   --color-text-secondary: #434455;
   --color-text-hero-title: #ffffff;
@@ -45,6 +44,8 @@
   --color-border-filter-button: #e7e9fc;
   --color-border-work-cards: #e7e9fc;
 
+  --color-background-body: #ffffff;
+
   --color-background-hero: #2e2f42;
   --color-background-button-order: #4d5ae5;
   --color-background-button-order-hover-focus: #404bbf;
@@ -64,7 +65,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   letter-spacing: 0.02em;
-  color: var(--color-text-main);
+  color: var(--color-text-secondary);
+  background: var(--color-background-body);
 }
 
 /* STUDIO */
@@ -93,26 +95,23 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--color-text-link);
+  color: var(--color-text-main);
 }
 .current {
   color: var(--color-navigation-current);
-  border-bottom: 2px solid var(--color-navigation-current);
-  border-radius: 2px;
 }
 .navigation-item:hover,
 .navigation-item:focus {
   color: var(--color-navigation-hover-focus);
-  border-bottom: 2px solid var(--color-navigation-hover-focus);
-  border-radius: 2px;
 }
 
 /* contact */
-
+.contact {
+  font-style: normal;
+}
 .contact-item {
   font-size: 16px;
   line-height: 1.5;
-  font-style: normal;
   color: var(--color-text-secondary);
 }
 .contact-item:hover,
@@ -131,6 +130,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   color: var(--color-text-hero-title);
+  letter-spacing: 0.02em;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -151,15 +151,16 @@ body {
 
 /* features */
 
-.features-list li h3 {
+.features-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  color: var(--color-text-main);
+  letter-spacing: 0.02em;
 }
-.features-list li p {
+.features-text {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--color-text-secondary);
 }
 
 /* secondary-title */
@@ -167,10 +168,11 @@ body {
 .secondary-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   text-transform: capitalize;
   color: var(--color-text-secondary-title);
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
 /* specialization */
@@ -189,28 +191,29 @@ body {
   background: var(--color-background-team);
   text-align: center;
 }
-.team-list li {
+.team-item {
   background: var(--color-background-team-item);
   display: inline-block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list li h3 {
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  color: var(--color-text-main);
+  letter-spacing: 0.02em;
 }
-.team-list li p {
+.team-position {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--color-text-secondary);
 }
 
 /* PORTFOLIO */
 
 /* filter-button */
-.filter-button {
+.works-filter-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -222,15 +225,15 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.current-button {
+/* .current-button {
   background: var(--color-filter-button-current);
   color: var(--color-text-filter-button-current);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid var(--color-filter-button-current);
-}
-.filter-button:hover,
-.filter-button:focus {
+} */
+.works-filter-button:hover,
+.works-filter-button:focus {
   background: var(--color-filter-button-hover-focus);
   color: var(--color-text-filter-button-hover-focus);
   border: 1px solid var(--color-filter-button-hover-focus);
@@ -247,12 +250,14 @@ body {
   display: inline-block;
   text-align: left;
 }
-.works-list li h3 {
+.works-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-text-main);
 }
-.works-list li span {
+.works-text {
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text-secondary);
