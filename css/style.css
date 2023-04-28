@@ -97,9 +97,12 @@ body {
   line-height: 1.5;
   color: var(--color-text-main);
 }
+/*
 .current {
   color: var(--color-navigation-current);
 }
+*/
+
 .navigation-item:hover,
 .navigation-item:focus {
   color: var(--color-navigation-hover-focus);
