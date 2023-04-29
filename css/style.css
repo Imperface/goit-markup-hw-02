@@ -64,7 +64,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  letter-spacing: 0.02em;
   color: var(--color-text-secondary);
   background: var(--color-background-body);
 }
@@ -95,6 +94,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-text-main);
 }
 /*
@@ -115,6 +115,7 @@ body {
 .contact-item {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-text-secondary);
 }
 .contact-item:hover,
@@ -132,8 +133,8 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  color: var(--color-text-hero-title);
   letter-spacing: 0.02em;
+  color: var(--color-text-hero-title);
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -158,12 +159,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--color-text-main);
   letter-spacing: 0.02em;
+  color: var(--color-text-main);
 }
 .features-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* secondary-title */
@@ -172,10 +174,10 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-text-secondary-title);
   text-align: center;
-  letter-spacing: 0.02em;
 }
 
 /* specialization */
@@ -205,12 +207,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--color-text-main);
   letter-spacing: 0.02em;
+  color: var(--color-text-main);
 }
 .team-position {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* PORTFOLIO */
@@ -263,6 +266,7 @@ body {
 .works-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-text-secondary);
 }
 
@@ -276,5 +280,6 @@ body {
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-text-footer);
 }
